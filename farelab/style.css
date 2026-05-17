@@ -249,10 +249,79 @@ p {
   font-size: 18px;
 }
 
-.coming-soon {
-  font-size: 72px;
-  font-weight: 700;
-  letter-spacing: -0.06em;
-  color: var(--accent);
-  margin-bottom: 32px;
+.coming-soon-page {
+  min-height: 100vh;
+  padding: 80px 8%;
+  max-width: 980px;
+  margin: 0 auto;
 }
+
+.coming-soon-page h1,
+.coming-soon-page .eyebrow,
+.coming-text,
+.project-status,
+.page-actions {
+  text-align: center;
+}
+
+.coming-text {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  font-size: 19px;
+}
+
+.project-status {
+  display: block;
+  width: fit-content;
+  margin: 28px auto 56px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 32px;
+  margin-top: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.project-section h2 {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.project-section p {
+  margin-bottom: 0;
+}
+
+.feature-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.feature-list li {
+  margin-bottom: 6px;
+}
+
+.page-actions {
+  margin-top: 42px;
+}
+
+@media (max-width: 850px) {
+  .coming-soon-page {
+    padding: 56px 8%;
+  }
+
+  .project-section {
+    padding: 24px;
+  }
+}
+
