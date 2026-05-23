@@ -31,6 +31,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
+  visibility: hidden;
 }
 
 .navbar {
@@ -323,5 +324,9 @@ p {
   .project-section {
     padding: 24px;
   }
+}
+
+body {
+  visibility: hidden;
 }
 
