@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Igor Machado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Igor Machado</div>
+
+    <nav class="nav-links">
+      <a id="navimpact" href="index.html#impact">Impact</a>
+      <a id="navexperience" href="index.html#experience">Experience</a>
+      <a id="navcontact" href="index.html#contact">Contact</a>
+      <a id="navprojects" href="projects.html">Projects</a>
+      <button id="themeBtn">Dark</button>
+      <button id="langBtn">PT</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+
+      <div class="section-header">
+        <p id="portfolioEyebrow" class="eyebrow">
+          Mobility Projects
+        </p>
+
+        <h2 id="portfolioTitle">
+          Projects
+        </h2>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3 id="portfolio1Title">
+            TarifaLab
+          </h3>
+
+          <p id="portfolio1Description">
+            Software for fare calculation, scenarios and transparency in public transport.
+          </p>
+
+          <a id="portfolio1Link" class="project-link" href="farelab/farelab.html">
+            Open project
+          </a>
+        </article>
+
+        <article class="card">
+          <h3 id="portfolio2Title">
+            Fare Calculation Course
+          </h3>
+
+          <p id="portfolio2Description">
+            Practical training on cost composition, demand, fleet, fare and subsidy in urban public transport.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 id="portfolio3Title">
+            Mobility and Road Safety Dashboard
+          </h3>
+
+          <p id="portfolio3Description">
+            Analysis of vulnerable users, public transport, motorcycles and travel time.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 id="portfolio4Title">
+            Aurum Engenharia
+          </h3>
+
+          <p id="portfolio4Description">
+            Spreadsheets, studies and technical solutions applied to urban mobility.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeBtn = document.getElementById("themeBtn");
+      const langBtn = document.getElementById("langBtn");
+
+      const text = {
+        pt: {
+          navimpact: "Impacto",
+          navexperience: "Experiência",
+          navcontact: "Contato",
+          navprojects: "Projetos",
+          portfolioEyebrow: "Projetos de Mobilidade",
+          portfolioTitle: "Projetos",
+          portfolio1Title: "TarifaLab",
+          portfolio1Description: "Software para cálculo tarifário, cenários e transparência no transporte público.",
+          portfolio1Link: "Abrir projeto",
+          portfolio2Title: "Curso de Cálculo Tarifário",
+          portfolio2Description: "Formação prática sobre composição de custos, demanda, frota, tarifa e subsídio no transporte público urbano.",
+          portfolio3Title: "Painel de Mobilidade e Segurança Viária",
+          portfolio3Description: "Análise de usuários vulneráveis, transporte público, motocicletas e tempo de viagem.",
+          portfolio4Title: "Aurum Engenharia",
+          portfolio4Description: "Planilhas, estudos e soluções técnicas aplicadas à mobilidade urbana."
+        },
+        en: {
+          navimpact: "Impact",
+          navexperience: "Experience",
+          navcontact: "Contact",
+          navprojects: "Projects",
+          portfolioEyebrow: "Mobility Projects",
+          portfolioTitle: "Projects",
+          portfolio1Title: "TarifaLab",
+          portfolio1Description: "Software for fare calculation, scenarios and transparency in public transport.",
+          portfolio1Link: "Open project",
+          portfolio2Title: "Fare Calculation Course",
+          portfolio2Description: "Practical training on cost composition, demand, fleet, fare and subsidy in urban public transport.",
+          portfolio3Title: "Mobility and Road Safety Dashboard",
+          portfolio3Description: "Analysis of vulnerable users, public transport, motorcycles and travel time.",
+          portfolio4Title: "Aurum Engenharia",
+          portfolio4Description: "Spreadsheets, studies and technical solutions applied to urban mobility."
+        }
+      };
+
+      function setLanguage(lang) {
+        Object.entries(text[lang]).forEach(([id, value]) => {
+          document.getElementById(id).innerText = value;
+        });
+
+        langBtn.innerText = lang === "pt" ? "EN" : "PT";
+        localStorage.setItem("language", lang);
+      }
+
+      themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        themeBtn.innerText = document.body.classList.contains("dark") ? "Light" : "Dark";
+      });
+
+      document.body.classList.add("dark");
+      themeBtn.innerText = "Light";
+
+      let language =
+        localStorage.getItem("language") ||
+        ((navigator.language || navigator.userLanguage).startsWith("pt") ? "pt" : "en");
+
+      setLanguage(language);
+
+      langBtn.addEventListener("click", () => {
+        language = language === "en" ? "pt" : "en";
+        setLanguage(language);
+      });
+    });
+  </script>
+</body>
+</html>

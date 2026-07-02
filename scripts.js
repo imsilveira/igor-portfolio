@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (language === "pt") {
       langBtn.innerText = "EN";
 
-      document.getElementById("navprojects").innerText = "Projetos";
+      document.getElementById("navimpact").innerText = "Impacto";
       document.getElementById("navexperience").innerText = "Experiência";
       document.getElementById("navcontact").innerText = "Contato";
-      document.getElementById("navfarelab").innerText = "TarifaLab";
+      document.getElementById("navprojects").innerText = "Projetos";
 
       document.getElementById("eyebrow").innerText = "TRANSPORTE • DADOS • INOVAÇÃO"
       
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("btnexperience").innerText = "Experiência";
       document.getElementById("btncontact").innerText = "Contato";
 
-      document.getElementById("projectsEyebrow").innerText = "Trabalhos Selecionados";
-      document.getElementById("projectsTitle").innerText = "Projetos e Impacto";
+      document.getElementById("impactEyebrow").innerText = "Trabalhos Selecionados";
+      document.getElementById("impactTitle").innerText = "Impacto";
       document.getElementById("project1Title").innerText = "Projeto de Otimização com ROI de 10x";
       document.getElementById("project1Description").innerText = "Liderei iniciativas de implementação e otimização que alcançaram até 10x de retorno sobre investimento para operadores de transporte público através de melhorias operacionais e de programação.";
       document.getElementById("project2Title").innerText = "Modelo de Subsídio Tarifário do Transporte Público";
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("project3Title").innerText = "Eficiência de Escala de Motoristas acima de 99%";
       document.getElementById("project3Description").innerText = "Configurei e otimizei sistemas de escala de motoristas alcançando eficiência acima de 99%, melhorando alocação operacional e confiabilidade.";
       document.getElementById("project4Title").innerText = "Estruturação de Licitação do Transporte Público";
-      document.getElementById("project4Description").innerText = "Apoiei o desenho técnico e estruturação de um novo modelo de concessão de transporte público de 15 anos, incluindo aspectos operacionais, financeiros e de planejamento.";
+      document.getElementById("project4Description").innerText = "Apoiei o desenho técnico e a estruturação de um novo modelo de concessão do transporte público urbano, com prazo de 15 anos, prorrogável por mais 10 anos, envolvendo planejamento operacional, modelagem financeira e diretrizes de qualidade do serviço. O contrato tinha valor estimado superior a R$ 2 bilhões à época.";
 
       document.getElementById("experienceEyebrow").innerText = "Trajetória";
       document.getElementById("experienceTitle").innerText = "Experiência";
@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       langBtn.innerText = "PT";
 
-      document.getElementById("navprojects").innerText = "Projects";
+      document.getElementById("navimpact").innerText = "Impact";
       document.getElementById("navexperience").innerText = "Experience";
       document.getElementById("navcontact").innerText = "Contact";
-      document.getElementById("navfarelab").innerText = "FareLab";
+      document.getElementById("navprojects").innerText = "Projects";
 
       document.getElementById("eyebrow").innerText = "TRANSPORT • DATA • INNOVATION"
 
@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("btnexperience").innerText = "Experience";
       document.getElementById("btncontact").innerText = "Contact";
 
-      document.getElementById("projectsEyebrow").innerText = "Selected Work";
-      document.getElementById("projectsTitle").innerText = "Projects & Impact";
+      document.getElementById("impactEyebrow").innerText = "Selected Work";
+      document.getElementById("impactTitle").innerText = "Impact";
       document.getElementById("project1Title").innerText = "10x ROI Optimization Project";
       document.getElementById("project1Description").innerText = "Led implementation and optimization initiatives that achieved up to 10x return on investment for public transport operators through scheduling and operational improvements.";
       document.getElementById("project2Title").innerText = "Urban Bus Fare Subsidy Framework";
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("project3Title").innerText = "99%+ Driver Scheduling Efficiency";
       document.getElementById("project3Description").innerText = "Configured and optimized driver scheduling systems achieving 99%+ scheduling efficiency, improving workforce allocation and operational reliability.";
       document.getElementById("project4Title").innerText = "Public Transport Tender Design";
-      document.getElementById("project4Description").innerText = "Supported the technical design and structuring of a new 15-year public transport concession model, including operational, financial and service planning aspects.";
+      document.getElementById("project4Description").innerText = "Supported the technical design and structuring of a 15-year urban public transport concession, extendable for another 10 years, covering operational planning, financial modeling, and service quality guidelines. The contract was estimated at over BRL 2 billion at the time.";
       
       document.getElementById("experienceEyebrow").innerText = "Career path";
       document.getElementById("experienceTitle").innerText = "Experience";
