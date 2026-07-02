@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="projects-page">
   <header class="navbar">
-    <div class="logo">Igor Machado</div>
+    <div class="logo">
+      <a href="index.html">Igor Machado</a>
+    </div>
 
     <nav class="nav-links">
-      <a id="navimpact" href="index.html#impact">Impact</a>
-      <a id="navexperience" href="index.html#experience">Experience</a>
-      <a id="navcontact" href="index.html#contact">Contact</a>
+      <a id="navhome" href="index.html">Portfolio</a>
       <a id="navprojects" href="projects.html">Projects</a>
       <button id="themeBtn">Dark</button>
       <button id="langBtn">PT</button>
@@ -58,6 +58,10 @@
           <p id="portfolio2Description">
             Practical training on cost composition, demand, fleet, fare and subsidy in urban public transport.
           </p>
+
+          <a id="portfolio2Link" class="project-link" href="curso-calculo-tarifario/index.html">
+            Coming soon
+          </a>
         </article>
 
         <article class="card">
@@ -68,6 +72,10 @@
           <p id="portfolio3Description">
             Analysis of vulnerable users, public transport, motorcycles and travel time.
           </p>
+
+          <a id="portfolio3Link" class="project-link" href="painel-mobilidade-seguranca-viaria/index.html">
+            Coming soon
+          </a>
         </article>
 
         <article class="card">
@@ -78,6 +86,10 @@
           <p id="portfolio4Description">
             Spreadsheets, studies and technical solutions applied to urban mobility.
           </p>
+
+          <a id="portfolio4Link" class="project-link" href="aurum-engenharia/index.html">
+            Coming soon
+          </a>
         </article>
 
       </div>
@@ -92,9 +104,7 @@
 
       const text = {
         pt: {
-          navimpact: "Impacto",
-          navexperience: "Experiência",
-          navcontact: "Contato",
+          navhome: "Portfolio",
           navprojects: "Projetos",
           portfolioEyebrow: "Projetos de Mobilidade",
           portfolioTitle: "Projetos",
@@ -103,15 +113,16 @@
           portfolio1Link: "Abrir projeto",
           portfolio2Title: "Curso de Cálculo Tarifário",
           portfolio2Description: "Formação prática sobre composição de custos, demanda, frota, tarifa e subsídio no transporte público urbano.",
+          portfolio2Link: "Em breve",
           portfolio3Title: "Painel de Mobilidade e Segurança Viária",
           portfolio3Description: "Análise de usuários vulneráveis, transporte público, motocicletas e tempo de viagem.",
+          portfolio3Link: "Em breve",
           portfolio4Title: "Aurum Engenharia",
-          portfolio4Description: "Planilhas, estudos e soluções técnicas aplicadas à mobilidade urbana."
+          portfolio4Description: "Planilhas, estudos e soluções técnicas aplicadas à mobilidade urbana.",
+          portfolio4Link: "Em breve"
         },
         en: {
-          navimpact: "Impact",
-          navexperience: "Experience",
-          navcontact: "Contact",
+          navhome: "Portfolio",
           navprojects: "Projects",
           portfolioEyebrow: "Mobility Projects",
           portfolioTitle: "Projects",
@@ -120,10 +131,13 @@
           portfolio1Link: "Open project",
           portfolio2Title: "Fare Calculation Course",
           portfolio2Description: "Practical training on cost composition, demand, fleet, fare and subsidy in urban public transport.",
+          portfolio2Link: "Coming soon",
           portfolio3Title: "Mobility and Road Safety Dashboard",
           portfolio3Description: "Analysis of vulnerable users, public transport, motorcycles and travel time.",
+          portfolio3Link: "Coming soon",
           portfolio4Title: "Aurum Engenharia",
-          portfolio4Description: "Spreadsheets, studies and technical solutions applied to urban mobility."
+          portfolio4Description: "Spreadsheets, studies and technical solutions applied to urban mobility.",
+          portfolio4Link: "Coming soon"
         }
       };
 
