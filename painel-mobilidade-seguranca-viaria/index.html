@@ -3,22 +3,422 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel de Mobilidade e Segurança Viária | Igor Machado</title>
+  <title>Painel de Mobilidade e Seguran&ccedil;a Vi&aacute;ria | Igor Machado</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 
-<body class="dark">
-  <main class="coming-soon-page">
-    <p class="eyebrow">Projeto</p>
-    <h1>Painel de Mobilidade e Segurança Viária</h1>
-    <p class="coming-text">
-      Análise de usuários vulneráveis, transporte público, motocicletas e tempo de viagem.
-    </p>
-    <p class="coming-soon">Em breve</p>
-    <div class="hero-buttons">
-      <a class="btn primary" href="../projects.html">Voltar aos projetos</a>
-      <a class="btn secondary" href="../index.html">Página principal</a>
+<body class="project-detail-page">
+  <header class="navbar">
+    <div class="logo">
+      <a href="../index.html">Igor Machado</a>
     </div>
+
+    <nav class="nav-links">
+      <a id="navhome" href="../index.html">Portfolio</a>
+      <a id="navprojects" href="../projects.html">Projetos</a>
+      <a id="navcontact" href="#contact-info">Contato</a>
+      <button id="themeBtn">Dark</button>
+      <button id="langBtn">PT</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <p id="eyebrow" class="eyebrow">Mobilidade urbana e seguran&ccedil;a vi&aacute;ria</p>
+      <h1 id="heroTitle">Painel de Mobilidade e Seguran&ccedil;a Vi&aacute;ria</h1>
+      <p id="heroDescription" class="project-lead">
+        Uma releitura visual sobre transporte p&uacute;blico, motocicletas, tempo de viagem
+        e risco para usu&aacute;rios vulner&aacute;veis.
+      </p>
+      <p id="heroSupport" class="project-support">
+        Projeto baseado na minha disserta&ccedil;&atilde;o de mestrado, defendida na EESC/USP,
+        que transforma uma an&aacute;lise acad&ecirc;mica sobre mobilidade urbana e acidentalidade
+        em uma experi&ecirc;ncia visual, acess&iacute;vel e orientada &agrave; tomada de decis&atilde;o.
+      </p>
+      <div class="hero-buttons">
+        <a id="btnThesis" class="btn primary" href="https://teses.usp.br/teses/disponiveis/18/18144/tde-16062016-171651/pt-br.html" target="_blank" rel="noopener">Ler disserta&ccedil;&atilde;o completa</a>
+        <a id="btnMethodology" class="btn secondary" href="#indicators">Ver indicadores</a>
+        <a id="btnNotebook" class="btn secondary disabled-link" aria-disabled="true">Notebook em breve</a>
+      </div>
+    </section>
+
+    <section class="project-content">
+      <div class="content-block">
+        <p id="originEyebrow" class="eyebrow">Origem do projeto</p>
+        <h2 id="originTitle">Da disserta&ccedil;&atilde;o ao produto visual de dados</h2>
+        <p id="originDescription">
+          Este projeto &eacute; uma releitura visual e anal&iacute;tica da minha disserta&ccedil;&atilde;o
+          de mestrado, defendida na EESC/USP em 2016. A ideia foi transformar
+          uma pesquisa acad&ecirc;mica sobre mobilidade urbana e acidentalidade em uma
+          experi&ecirc;ncia mais simples, visual e orientada &agrave; tomada de decis&atilde;o.
+        </p>
+        <p id="originComplement">
+          A an&aacute;lise original investigou como a perda de atratividade do transporte
+          p&uacute;blico, o crescimento da motocicleta e a diferen&ccedil;a de tempo entre modos
+          podem afetar a seguran&ccedil;a dos usu&aacute;rios mais expostos no tr&acirc;nsito.
+        </p>
+        <a id="originButton" class="project-link" href="https://teses.usp.br/teses/disponiveis/18/18144/tde-16062016-171651/pt-br.html" target="_blank" rel="noopener">Ler disserta&ccedil;&atilde;o completa</a>
+      </div>
+
+      <div class="insight-block">
+        <p id="problemEyebrow" class="eyebrow">O problema em uma frase</p>
+        <h2 id="problemTitle">A motocicleta aparece como resposta individual a um problema coletivo</h2>
+        <p id="problemDescription">
+          Quando o &ocirc;nibus perde competitividade em tempo, frequ&ecirc;ncia e confiabilidade,
+          parte da demanda busca alternativas individuais. A motocicleta reduz o tempo
+          de viagem, mas aumenta a exposi&ccedil;&atilde;o ao risco.
+        </p>
+      </div>
+
+      <section class="content-block">
+        <p id="exposureEyebrow" class="eyebrow">Antes dos n&uacute;meros</p>
+        <h2 id="exposureTitle">Quem &eacute; vulner&aacute;vel no tr&acirc;nsito?</h2>
+        <p id="exposureDescription">
+          Neste projeto, usu&aacute;rios vulner&aacute;veis s&atilde;o aqueles que se deslocam sem
+          uma estrutura externa de prote&ccedil;&atilde;o, como pedestres, ciclistas e motociclistas.
+          Em caso de conflito com ve&iacute;culos maiores, esses usu&aacute;rios est&atilde;o mais
+          expostos a les&otilde;es graves.
+        </p>
+        <p id="exposureComplement">
+          Usu&aacute;rios n&atilde;o vulner&aacute;veis s&atilde;o aqueles que se deslocam em ve&iacute;culos com
+          carenagem ou estrutura de prote&ccedil;&atilde;o, como autom&oacute;veis, &ocirc;nibus e ve&iacute;culos
+          pesados. Isso n&atilde;o significa aus&ecirc;ncia de risco, mas uma condi&ccedil;&atilde;o f&iacute;sica
+          de maior prote&ccedil;&atilde;o em caso de acidente.
+        </p>
+      </section>
+
+      <section id="indicators" class="content-block metric-story">
+        <div>
+          <p id="indicatorEyebrow" class="eyebrow">Indicador principal</p>
+          <h2 id="indicatorTitle">O risco relativo dos usu&aacute;rios vulner&aacute;veis aumentou</h2>
+          <p id="indicatorDescription">
+            A rela&ccedil;&atilde;o entre &oacute;bitos de usu&aacute;rios vulner&aacute;veis e n&atilde;o vulner&aacute;veis
+            passou de 0,85 em 2007 para 2,24 em 2012. Em termos simples: ao longo
+            do per&iacute;odo analisado, os &oacute;bitos se concentraram cada vez mais entre
+            pedestres, ciclistas e motociclistas.
+          </p>
+        </div>
+
+        <div class="metric-comparison" aria-label="Razao entre usuarios vulneraveis e nao vulneraveis">
+          <div class="metric-point">
+            <span id="metric2007Label">2007</span>
+            <strong>0,85</strong>
+          </div>
+          <div class="metric-arrow">-&gt;</div>
+          <div class="metric-point featured">
+            <span id="metric2012Label">2012</span>
+            <strong>2,24</strong>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <article class="detail-card">
+          <h3 id="vulnerableTitle">Usu&aacute;rios vulner&aacute;veis</h3>
+          <p id="vulnerableSubtitle" class="card-subtitle">Sem estrutura externa de prote&ccedil;&atilde;o</p>
+          <ul>
+            <li id="vulnerable1">Pedestres</li>
+            <li id="vulnerable2">Ciclistas</li>
+            <li id="vulnerable3">Motociclistas</li>
+          </ul>
+          <p id="vulnerableNote" class="card-note">
+            Est&atilde;o mais expostos fisicamente em caso de conflito no tr&acirc;nsito.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h3 id="nonVulnerableTitle">Usu&aacute;rios n&atilde;o vulner&aacute;veis</h3>
+          <p id="nonVulnerableSubtitle" class="card-subtitle">Com estrutura de prote&ccedil;&atilde;o</p>
+          <ul>
+            <li id="nonVulnerable1">Autom&oacute;veis</li>
+            <li id="nonVulnerable2">&Ocirc;nibus</li>
+            <li id="nonVulnerable3">Ve&iacute;culos pesados</li>
+          </ul>
+          <p id="nonVulnerableNote" class="card-note">
+            Possuem carenagem ou estrutura veicular que reduz a exposi&ccedil;&atilde;o direta
+            em caso de acidente.
+          </p>
+        </article>
+      </div>
+
+      <div class="content-grid">
+        <article class="detail-card">
+          <p id="travelEyebrow" class="eyebrow">Tempo de viagem</p>
+          <h3 id="travelTitle">Tempo importa mais do que parece</h3>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span id="busCarLabel">&Ocirc;nibus x carro</span>
+              <strong>+26%</strong>
+              <small id="busCarText">tempo m&eacute;dio</small>
+            </div>
+            <div class="stat-card">
+              <span id="busMotoLabel">&Ocirc;nibus x moto</span>
+              <strong>+77%</strong>
+              <small id="busMotoText">tempo m&eacute;dio</small>
+            </div>
+          </div>
+          <p id="travelDescription">
+            A motocicleta n&atilde;o cresce apenas por custo. Ela tamb&eacute;m responde ao
+            problema do tempo, da espera e da conveni&ecirc;ncia.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <p id="productivityEyebrow" class="eyebrow">Transporte p&uacute;blico</p>
+          <h3 id="productivityTitle">O sistema cresceu, mas perdeu produtividade</h3>
+          <ul>
+            <li id="productivity1">IPKe em queda.</li>
+            <li id="productivity2">Frota e tarifa em crescimento.</li>
+            <li id="productivity3">Passageiros sem acompanhar na mesma propor&ccedil;&atilde;o.</li>
+          </ul>
+          <p id="productivityDescription">
+            Menos passageiros equivalentes por quil&ocirc;metro pressionam o custo por
+            passageiro e dificultam o equil&iacute;brio econ&ocirc;mico do sistema.
+          </p>
+        </article>
+      </div>
+
+      <div class="content-block">
+        <p id="dataEyebrow" class="eyebrow">Dados utilizados</p>
+        <h2 id="dataTitle">Quatro blocos para contar a hist&oacute;ria</h2>
+        <div class="mini-card-grid">
+          <article>
+            <h3 id="data1Title">&Oacute;bitos por modo</h3>
+            <p id="data1Description">S&eacute;rie 2007-2012 por pedestres, ciclistas, motocicletas, autom&oacute;veis, ve&iacute;culos pesados e &ocirc;nibus.</p>
+          </article>
+          <article>
+            <h3 id="data2Title">Raz&atilde;o UV/UNV</h3>
+            <p id="data2Description">Indicador autoral de preval&ecirc;ncia entre usu&aacute;rios vulner&aacute;veis e n&atilde;o vulner&aacute;veis.</p>
+          </article>
+          <article>
+            <h3 id="data3Title">Transporte p&uacute;blico</h3>
+            <p id="data3Description">IPKe, passageiros, frota, tarifa e popula&ccedil;&atilde;o entre 2003 e 2014.</p>
+          </article>
+          <article>
+            <h3 id="data4Title">Tempo de viagem</h3>
+            <p id="data4Description">Compara&ccedil;&atilde;o entre &ocirc;nibus, autom&oacute;vel e motocicleta em linhas urbanas.</p>
+          </article>
+        </div>
+      </div>
+
+      <section id="contact-info" class="skills-section">
+        <p id="skillsEyebrow" class="eyebrow">Compet&ecirc;ncias demonstradas</p>
+        <div class="skill-list">
+          <span id="skill1">Python</span>
+          <span id="skill2">Pandas</span>
+          <span id="skill3">An&aacute;lise explorat&oacute;ria de dados</span>
+          <span id="skill4">Indicadores de mobilidade</span>
+          <span id="skill5">Seguran&ccedil;a vi&aacute;ria</span>
+          <span id="skill6">Visualiza&ccedil;&atilde;o de dados</span>
+          <span id="skill7">Storytelling anal&iacute;tico</span>
+          <span id="skill8">Pol&iacute;ticas p&uacute;blicas urbanas</span>
+        </div>
+        <p class="contact-email">
+          Email: <a href="mailto:igormachadoprojetos@gmail.com">igormachadoprojetos@gmail.com</a>
+        </p>
+      </section>
+    </section>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeBtn = document.getElementById("themeBtn");
+      const langBtn = document.getElementById("langBtn");
+
+      const text = {
+        pt: {
+          title: "Painel de Mobilidade e Seguran&ccedil;a Vi&aacute;ria | Igor Machado",
+          htmlLang: "pt-BR",
+          navhome: "Portfolio",
+          navprojects: "Projetos",
+          navcontact: "Contato",
+          eyebrow: "Mobilidade urbana e seguran&ccedil;a vi&aacute;ria",
+          heroTitle: "Painel de Mobilidade e Seguran&ccedil;a Vi&aacute;ria",
+          heroDescription: "Uma releitura visual sobre transporte p&uacute;blico, motocicletas, tempo de viagem e risco para usu&aacute;rios vulner&aacute;veis.",
+          heroSupport: "Projeto baseado na minha disserta&ccedil;&atilde;o de mestrado, defendida na EESC/USP, que transforma uma an&aacute;lise acad&ecirc;mica sobre mobilidade urbana e acidentalidade em uma experi&ecirc;ncia visual, acess&iacute;vel e orientada &agrave; tomada de decis&atilde;o.",
+          btnThesis: "Ler disserta&ccedil;&atilde;o completa",
+          btnMethodology: "Ver indicadores",
+          btnNotebook: "Notebook em breve",
+          btnContact: "Entrar em contato",
+          originEyebrow: "Origem do projeto",
+          originTitle: "Da disserta&ccedil;&atilde;o ao produto visual de dados",
+          originDescription: "Este projeto &eacute; uma releitura visual e anal&iacute;tica da minha disserta&ccedil;&atilde;o de mestrado, defendida na EESC/USP em 2016. A ideia foi transformar uma pesquisa acad&ecirc;mica sobre mobilidade urbana e acidentalidade em uma experi&ecirc;ncia mais simples, visual e orientada &agrave; tomada de decis&atilde;o.",
+          originComplement: "A an&aacute;lise original investigou como a perda de atratividade do transporte p&uacute;blico, o crescimento da motocicleta e a diferen&ccedil;a de tempo entre modos podem afetar a seguran&ccedil;a dos usu&aacute;rios mais expostos no tr&acirc;nsito.",
+          originButton: "Ler disserta&ccedil;&atilde;o completa",
+          problemEyebrow: "O problema em uma frase",
+          problemTitle: "A motocicleta aparece como resposta individual a um problema coletivo",
+          problemDescription: "Quando o &ocirc;nibus perde competitividade em tempo, frequ&ecirc;ncia e confiabilidade, parte da demanda busca alternativas individuais. A motocicleta reduz o tempo de viagem, mas aumenta a exposi&ccedil;&atilde;o ao risco.",
+          exposureEyebrow: "Antes dos n&uacute;meros",
+          exposureTitle: "Quem &eacute; vulner&aacute;vel no tr&acirc;nsito?",
+          exposureDescription: "Neste projeto, usu&aacute;rios vulner&aacute;veis s&atilde;o aqueles que se deslocam sem uma estrutura externa de prote&ccedil;&atilde;o, como pedestres, ciclistas e motociclistas. Em caso de conflito com ve&iacute;culos maiores, esses usu&aacute;rios est&atilde;o mais expostos a les&otilde;es graves.",
+          exposureComplement: "Usu&aacute;rios n&atilde;o vulner&aacute;veis s&atilde;o aqueles que se deslocam em ve&iacute;culos com carenagem ou estrutura de prote&ccedil;&atilde;o, como autom&oacute;veis, &ocirc;nibus e ve&iacute;culos pesados. Isso n&atilde;o significa aus&ecirc;ncia de risco, mas uma condi&ccedil;&atilde;o f&iacute;sica de maior prote&ccedil;&atilde;o em caso de acidente.",
+          indicatorEyebrow: "Indicador principal",
+          indicatorTitle: "O risco relativo dos usu&aacute;rios vulner&aacute;veis aumentou",
+          indicatorDescription: "A rela&ccedil;&atilde;o entre &oacute;bitos de usu&aacute;rios vulner&aacute;veis e n&atilde;o vulner&aacute;veis passou de 0,85 em 2007 para 2,24 em 2012. Em termos simples: ao longo do per&iacute;odo analisado, os &oacute;bitos se concentraram cada vez mais entre pedestres, ciclistas e motociclistas.",
+          metric2007Label: "2007",
+          metric2012Label: "2012",
+          vulnerableTitle: "Usu&aacute;rios vulner&aacute;veis",
+          vulnerableSubtitle: "Sem estrutura externa de prote&ccedil;&atilde;o",
+          vulnerable1: "Pedestres",
+          vulnerable2: "Ciclistas",
+          vulnerable3: "Motociclistas",
+          vulnerableNote: "Est&atilde;o mais expostos fisicamente em caso de conflito no tr&acirc;nsito.",
+          nonVulnerableTitle: "Usu&aacute;rios n&atilde;o vulner&aacute;veis",
+          nonVulnerableSubtitle: "Com estrutura de prote&ccedil;&atilde;o",
+          nonVulnerable1: "Autom&oacute;veis",
+          nonVulnerable2: "&Ocirc;nibus",
+          nonVulnerable3: "Ve&iacute;culos pesados",
+          nonVulnerableNote: "Possuem carenagem ou estrutura veicular que reduz a exposi&ccedil;&atilde;o direta em caso de acidente.",
+          travelEyebrow: "Tempo de viagem",
+          travelTitle: "Tempo importa mais do que parece",
+          busCarLabel: "&Ocirc;nibus x carro",
+          busCarText: "tempo m&eacute;dio",
+          busMotoLabel: "&Ocirc;nibus x moto",
+          busMotoText: "tempo m&eacute;dio",
+          travelDescription: "A motocicleta n&atilde;o cresce apenas por custo. Ela tamb&eacute;m responde ao problema do tempo, da espera e da conveni&ecirc;ncia.",
+          productivityEyebrow: "Transporte p&uacute;blico",
+          productivityTitle: "O sistema cresceu, mas perdeu produtividade",
+          productivity1: "IPKe em queda.",
+          productivity2: "Frota e tarifa em crescimento.",
+          productivity3: "Passageiros sem acompanhar na mesma propor&ccedil;&atilde;o.",
+          productivityDescription: "Menos passageiros equivalentes por quil&ocirc;metro pressionam o custo por passageiro e dificultam o equil&iacute;brio econ&ocirc;mico do sistema.",
+          dataEyebrow: "Dados utilizados",
+          dataTitle: "Quatro blocos para contar a hist&oacute;ria",
+          data1Title: "&Oacute;bitos por modo",
+          data1Description: "S&eacute;rie 2007-2012 por pedestres, ciclistas, motocicletas, autom&oacute;veis, ve&iacute;culos pesados e &ocirc;nibus.",
+          data2Title: "Raz&atilde;o UV/UNV",
+          data2Description: "Indicador autoral de preval&ecirc;ncia entre usu&aacute;rios vulner&aacute;veis e n&atilde;o vulner&aacute;veis.",
+          data3Title: "Transporte p&uacute;blico",
+          data3Description: "IPKe, passageiros, frota, tarifa e popula&ccedil;&atilde;o entre 2003 e 2014.",
+          data4Title: "Tempo de viagem",
+          data4Description: "Compara&ccedil;&atilde;o entre &ocirc;nibus, autom&oacute;vel e motocicleta em linhas urbanas.",
+          skillsEyebrow: "Compet&ecirc;ncias demonstradas",
+          skill1: "Python",
+          skill2: "Pandas",
+          skill3: "An&aacute;lise explorat&oacute;ria de dados",
+          skill4: "Indicadores de mobilidade",
+          skill5: "Seguran&ccedil;a vi&aacute;ria",
+          skill6: "Visualiza&ccedil;&atilde;o de dados",
+          skill7: "Storytelling anal&iacute;tico",
+          skill8: "Pol&iacute;ticas p&uacute;blicas urbanas"
+        },
+        en: {
+          title: "Mobility and Road Safety Dashboard | Igor Machado",
+          htmlLang: "en",
+          navhome: "Portfolio",
+          navprojects: "Projects",
+          navcontact: "Contact",
+          eyebrow: "Urban mobility and road safety",
+          heroTitle: "Mobility and Road Safety Dashboard",
+          heroDescription: "A visual reinterpretation of public transport, motorcycles, travel time and risk for vulnerable road users.",
+          heroSupport: "Project based on my master's dissertation, defended at EESC/USP, transforming an academic analysis of urban mobility and road user crash risk into a visual, accessible and decision-oriented experience.",
+          btnThesis: "Read full dissertation",
+          btnMethodology: "View indicators",
+          btnNotebook: "Notebook coming soon",
+          btnContact: "Contact",
+          originEyebrow: "Project origin",
+          originTitle: "From dissertation to visual data product",
+          originDescription: "This project is a visual and analytical reinterpretation of my master's dissertation, defended at EESC/USP in 2016. The idea was to transform academic research on urban mobility and crash patterns into a simpler, more visual and decision-oriented experience.",
+          originComplement: "The original analysis investigated how declining public transport attractiveness, motorcycle growth and travel time differences between modes can affect the safety of the most exposed road users.",
+          originButton: "Read full dissertation",
+          problemEyebrow: "The problem in one sentence",
+          problemTitle: "Motorcycles emerge as an individual response to a collective problem",
+          problemDescription: "When buses lose competitiveness in travel time, frequency and reliability, part of the demand seeks individual alternatives. Motorcycles reduce travel time, but increase exposure to risk.",
+          exposureEyebrow: "Before the numbers",
+          exposureTitle: "Who is vulnerable in traffic?",
+          exposureDescription: "In this project, vulnerable users are those who travel without an external protective structure, such as pedestrians, cyclists and motorcyclists. In conflicts with larger vehicles, these users are more exposed to severe injuries.",
+          exposureComplement: "Non-vulnerable users are those who travel in vehicles with bodywork or protective structure, such as cars, buses and heavy vehicles. This does not mean absence of risk, but a physically more protected condition in the event of a crash.",
+          indicatorEyebrow: "Main indicator",
+          indicatorTitle: "The relative risk for vulnerable users increased",
+          indicatorDescription: "The ratio between deaths of vulnerable and non-vulnerable users rose from 0.85 in 2007 to 2.24 in 2012. In simple terms: over the analyzed period, deaths became increasingly concentrated among pedestrians, cyclists and motorcyclists.",
+          metric2007Label: "2007",
+          metric2012Label: "2012",
+          vulnerableTitle: "Vulnerable users",
+          vulnerableSubtitle: "Without external protective structure",
+          vulnerable1: "Pedestrians",
+          vulnerable2: "Cyclists",
+          vulnerable3: "Motorcyclists",
+          vulnerableNote: "They are more physically exposed in the event of a traffic conflict.",
+          nonVulnerableTitle: "Non-vulnerable users",
+          nonVulnerableSubtitle: "With protective structure",
+          nonVulnerable1: "Cars",
+          nonVulnerable2: "Buses",
+          nonVulnerable3: "Heavy vehicles",
+          nonVulnerableNote: "They have bodywork or vehicle structure that reduces direct exposure in the event of a crash.",
+          travelEyebrow: "Travel time",
+          travelTitle: "Time matters more than it seems",
+          busCarLabel: "Bus vs car",
+          busCarText: "average time",
+          busMotoLabel: "Bus vs motorcycle",
+          busMotoText: "average time",
+          travelDescription: "Motorcycle growth is not only about cost. It also responds to time, waiting and convenience.",
+          productivityEyebrow: "Public transport",
+          productivityTitle: "The system expanded, but lost productivity",
+          productivity1: "IPKe declined.",
+          productivity2: "Fleet and fares increased.",
+          productivity3: "Ridership did not grow at the same pace.",
+          productivityDescription: "Fewer equivalent passengers per kilometer increase the cost per passenger and make the economic balance of the system harder.",
+          dataEyebrow: "Data used",
+          dataTitle: "Four blocks to tell the story",
+          data1Title: "Deaths by mode",
+          data1Description: "2007-2012 series for pedestrians, cyclists, motorcycles, cars, heavy vehicles and buses.",
+          data2Title: "VU/NVU ratio",
+          data2Description: "A prevalence indicator comparing vulnerable and non-vulnerable road users.",
+          data3Title: "Public transport",
+          data3Description: "IPKe, ridership, fleet, fare and population between 2003 and 2014.",
+          data4Title: "Travel time",
+          data4Description: "Comparison between buses, cars and motorcycles on urban routes.",
+          skillsEyebrow: "Demonstrated skills",
+          skill1: "Python",
+          skill2: "Pandas",
+          skill3: "Exploratory data analysis",
+          skill4: "Mobility indicators",
+          skill5: "Road safety",
+          skill6: "Data visualization",
+          skill7: "Analytical storytelling",
+          skill8: "Urban public policy"
+        }
+      };
+
+      function setLanguage(lang) {
+        const languageText = text[lang];
+
+        Object.entries(languageText).forEach(([id, value]) => {
+          if (id === "title" || id === "htmlLang") {
+            return;
+          }
+
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = value;
+          }
+        });
+
+        document.title = languageText.title;
+        document.documentElement.lang = languageText.htmlLang;
+        langBtn.innerText = lang === "pt" ? "EN" : "PT";
+        localStorage.setItem("language", lang);
+      }
+
+      themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        themeBtn.innerText = document.body.classList.contains("dark") ? "Light" : "Dark";
+      });
+
+      document.body.classList.add("dark");
+      themeBtn.innerText = "Light";
+
+      let language =
+        localStorage.getItem("language") ||
+        ((navigator.language || navigator.userLanguage).startsWith("pt") ? "pt" : "en");
+
+      setLanguage(language);
+
+      langBtn.addEventListener("click", () => {
+        language = language === "en" ? "pt" : "en";
+        setLanguage(language);
+      });
+    });
+  </script>
 </body>
 </html>
