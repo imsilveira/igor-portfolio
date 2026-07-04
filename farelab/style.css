@@ -55,6 +55,11 @@ body.dark .navbar {
   letter-spacing: -0.03em;
 }
 
+.logo a {
+  color: var(--text);
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   align-items: center;

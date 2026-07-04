@@ -8,63 +8,168 @@
 </head>
 
 <body class="dark">
+  <header class="navbar">
+    <div class="logo">
+      <a href="../index.html">Igor Machado</a>
+    </div>
+
+    <nav class="nav-links">
+      <a id="navhome" href="../index.html">Portfolio</a>
+      <a id="navprojects" href="../projects.html">Projects</a>
+      <a id="navcontact" href="../index.html#contact">Contact</a>
+      <button id="themeBtn">Dark</button>
+      <button id="langBtn">PT</button>
+    </nav>
+  </header>
 
   <main class="coming-soon-page">
 
-    <p class="eyebrow">Public Transport Tool</p>
+    <p id="eyebrow" class="eyebrow">Public Transport Tool</p>
 
-    <h1>FareLab</h1>
+    <h1 id="heroTitle">FareLab</h1>
 
-    <p class="coming-text">
+    <p id="heroDescription" class="coming-text">
       A web platform for public transport fare calculation,
       cost transparency and scenario analysis.
     </p>
 
-    <p class="project-status">
+    <p id="projectStatus" class="project-status">
       In active development
     </p>
 
     <section class="project-section">
-      <h2>About the project</h2>
+      <h2 id="aboutTitle">About the project</h2>
 
-      <p>
+      <p id="aboutDescription">
         FareLab is being developed to make public transport fare calculation
         more transparent, interactive and easier to understand.
       </p>
 
-      <p>
+      <p id="aboutComplement">
         The project combines my professional experience in public transport
         planning with programming foundations developed through CS50.
       </p>
     </section>
 
     <section class="project-section">
-      <h2>Current features</h2>
+      <h2 id="featuresTitle">Current features</h2>
 
       <ul class="feature-list">
-        <li>Fare calculation based on operational and financial inputs</li>
-        <li>Cost breakdown by fixed, variable and general components</li>
-        <li>Scenario creation and comparison</li>
-        <li>Inputs for fuel, labor, fleet, depreciation and subsidies</li>
+        <li id="feature1">Fare calculation based on operational and financial inputs</li>
+        <li id="feature2">Cost breakdown by fixed, variable and general components</li>
+        <li id="feature3">Scenario creation and comparison</li>
+        <li id="feature4">Inputs for fuel, labor, fleet, depreciation and subsidies</li>
       </ul>
     </section>
 
     <section class="project-section">
-      <h2>Goal</h2>
+      <h2 id="goalTitle">Goal</h2>
 
-      <p>
+      <p id="goalDescription">
         The goal is not only to calculate fares, but to make the logic behind
         them visible for planners, public managers and decision-makers.
       </p>
     </section>
 
     <div class="page-actions">
-      <a class="btn secondary" href="../index.html">
-        ← Back to Portfolio
+      <a id="backButton" class="btn secondary" href="../projects.html">
+        &larr; Back to projects
       </a>
     </div>
 
   </main>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeBtn = document.getElementById("themeBtn");
+      const langBtn = document.getElementById("langBtn");
+
+      const text = {
+        pt: {
+          title: "TarifaLab | Igor Machado",
+          htmlLang: "pt-BR",
+          navhome: "Portfolio",
+          navprojects: "Projetos",
+          navcontact: "Contato",
+          eyebrow: "Ferramenta de transporte publico",
+          heroTitle: "TarifaLab",
+          heroDescription: "Uma plataforma web para calculo tarifario do transporte publico, transparencia de custos e analise de cenarios.",
+          projectStatus: "Em desenvolvimento ativo",
+          aboutTitle: "Sobre o projeto",
+          aboutDescription: "O TarifaLab esta sendo desenvolvido para tornar o calculo tarifario do transporte publico mais transparente, interativo e facil de entender.",
+          aboutComplement: "O projeto combina minha experiencia profissional em planejamento de transporte publico com fundamentos de programacao desenvolvidos no CS50.",
+          featuresTitle: "Funcionalidades atuais",
+          feature1: "Calculo tarifario com base em dados operacionais e financeiros",
+          feature2: "Abertura de custos por componentes fixos, variaveis e gerais",
+          feature3: "Criacao e comparacao de cenarios",
+          feature4: "Entradas para combustivel, pessoal, frota, depreciacao e subsidios",
+          goalTitle: "Objetivo",
+          goalDescription: "O objetivo nao e apenas calcular tarifas, mas tornar visivel a logica por tras delas para planejadores, gestores publicos e tomadores de decisao.",
+          backButton: "&larr; Voltar aos projetos"
+        },
+        en: {
+          title: "FareLab | Igor Machado",
+          htmlLang: "en",
+          navhome: "Portfolio",
+          navprojects: "Projects",
+          navcontact: "Contact",
+          eyebrow: "Public Transport Tool",
+          heroTitle: "FareLab",
+          heroDescription: "A web platform for public transport fare calculation, cost transparency and scenario analysis.",
+          projectStatus: "In active development",
+          aboutTitle: "About the project",
+          aboutDescription: "FareLab is being developed to make public transport fare calculation more transparent, interactive and easier to understand.",
+          aboutComplement: "The project combines my professional experience in public transport planning with programming foundations developed through CS50.",
+          featuresTitle: "Current features",
+          feature1: "Fare calculation based on operational and financial inputs",
+          feature2: "Cost breakdown by fixed, variable and general components",
+          feature3: "Scenario creation and comparison",
+          feature4: "Inputs for fuel, labor, fleet, depreciation and subsidies",
+          goalTitle: "Goal",
+          goalDescription: "The goal is not only to calculate fares, but to make the logic behind them visible for planners, public managers and decision-makers.",
+          backButton: "&larr; Back to projects"
+        }
+      };
+
+      function setLanguage(lang) {
+        const languageText = text[lang];
+
+        Object.entries(languageText).forEach(([id, value]) => {
+          if (id === "title" || id === "htmlLang") {
+            return;
+          }
+
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = value;
+          }
+        });
+
+        document.title = languageText.title;
+        document.documentElement.lang = languageText.htmlLang;
+        langBtn.innerText = lang === "pt" ? "EN" : "PT";
+        localStorage.setItem("language", lang);
+      }
+
+      themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        themeBtn.innerText = document.body.classList.contains("dark") ? "Light" : "Dark";
+      });
+
+      document.body.classList.add("dark");
+      themeBtn.innerText = "Light";
+
+      let language =
+        localStorage.getItem("language") ||
+        ((navigator.language || navigator.userLanguage).startsWith("pt") ? "pt" : "en");
+
+      setLanguage(language);
+
+      langBtn.addEventListener("click", () => {
+        language = language === "en" ? "pt" : "en";
+        setLanguage(language);
+      });
+    });
+  </script>
 </body>
 </html>

@@ -14,31 +14,33 @@
     </div>
 
     <nav class="nav-links">
-      <a href="../index.html">Portfolio</a>
-      <a href="../projects.html">Projetos</a>
-      <a href="#contact-info">Contato</a>
+      <a id="navhome" href="../index.html">Portfolio</a>
+      <a id="navprojects" href="../projects.html">Projetos</a>
+      <a id="navcontact" href="#contact-info">Contato</a>
+      <button id="themeBtn">Dark</button>
+      <button id="langBtn">PT</button>
     </nav>
   </header>
 
   <main>
     <section class="project-hero">
-      <p class="eyebrow">Educa&ccedil;&atilde;o t&eacute;cnica aplicada</p>
-      <h1>Curso de C&aacute;lculo Tarif&aacute;rio</h1>
-      <p class="project-lead">
+      <p id="heroEyebrow" class="eyebrow">Educa&ccedil;&atilde;o t&eacute;cnica aplicada</p>
+      <h1 id="heroTitle">Curso de C&aacute;lculo Tarif&aacute;rio</h1>
+      <p id="heroDescription" class="project-lead">
         Forma&ccedil;&atilde;o pr&aacute;tica sobre custos, demanda, frota, tarifa t&eacute;cnica
         e subs&iacute;dio no transporte p&uacute;blico urbano.
       </p>
       <div class="hero-buttons">
-        <a class="btn primary" href="#contact-info">Tenho interesse</a>
-        <a class="btn secondary" href="../projects.html">Voltar aos projetos</a>
+        <a id="interestButton" class="btn primary" href="#contact-info">Tenho interesse</a>
+        <a id="projectsButton" class="btn secondary" href="../projects.html">Voltar aos projetos</a>
       </div>
     </section>
 
     <section class="project-content">
       <div class="content-block">
-        <p class="eyebrow">Por que este curso existe</p>
-        <h2>Traduzir uma metodologia complexa em forma&ccedil;&atilde;o pr&aacute;tica</h2>
-        <p>
+        <p id="whyEyebrow" class="eyebrow">Por que este curso existe</p>
+        <h2 id="whyTitle">Traduzir uma metodologia complexa em forma&ccedil;&atilde;o pr&aacute;tica</h2>
+        <p id="whyDescription">
           O c&aacute;lculo tarif&aacute;rio envolve decis&otilde;es t&eacute;cnicas, financeiras e
           regulat&oacute;rias que afetam diretamente a sustentabilidade do transporte
           coletivo. O curso organiza essa l&oacute;gica em uma jornada did&aacute;tica para
@@ -48,30 +50,30 @@
 
       <div class="content-grid">
         <article class="detail-card">
-          <h3>O que o curso aborda</h3>
+          <h3 id="topicsTitle">O que o curso aborda</h3>
           <ul>
-            <li>Custos fixos, custos vari&aacute;veis e despesas administrativas.</li>
-            <li>Demanda, passageiros equivalentes, quilometragem e frota.</li>
-            <li>Remunera&ccedil;&atilde;o, deprecia&ccedil;&atilde;o e capital investido.</li>
-            <li>Tarifa t&eacute;cnica, tarifa p&uacute;blica, subs&iacute;dio e cen&aacute;rios.</li>
+            <li id="topic1">Custos fixos, custos vari&aacute;veis e despesas administrativas.</li>
+            <li id="topic2">Demanda, passageiros equivalentes, quilometragem e frota.</li>
+            <li id="topic3">Remunera&ccedil;&atilde;o, deprecia&ccedil;&atilde;o e capital investido.</li>
+            <li id="topic4">Tarifa t&eacute;cnica, tarifa p&uacute;blica, subs&iacute;dio e cen&aacute;rios.</li>
           </ul>
         </article>
 
         <article class="detail-card">
-          <h3>Para quem &eacute;</h3>
+          <h3 id="audienceTitle">Para quem &eacute;</h3>
           <ul>
-            <li>Gestores e equipes t&eacute;cnicas de mobilidade urbana.</li>
-            <li>Consultores, analistas e profissionais de transporte coletivo.</li>
-            <li>Estudantes e pesquisadores que precisam aplicar a metodologia.</li>
-            <li>Times que buscam mais transpar&ecirc;ncia na regula&ccedil;&atilde;o tarif&aacute;ria.</li>
+            <li id="audience1">Gestores e equipes t&eacute;cnicas de mobilidade urbana.</li>
+            <li id="audience2">Consultores, analistas e profissionais de transporte coletivo.</li>
+            <li id="audience3">Estudantes e pesquisadores que precisam aplicar a metodologia.</li>
+            <li id="audience4">Times que buscam mais transpar&ecirc;ncia na regula&ccedil;&atilde;o tarif&aacute;ria.</li>
           </ul>
         </article>
       </div>
 
       <div class="content-block">
-        <p class="eyebrow">Abordagem</p>
-        <h2>Exemplos aplicados, leitura cr&iacute;tica e tomada de decis&atilde;o</h2>
-        <p>
+        <p id="approachEyebrow" class="eyebrow">Abordagem</p>
+        <h2 id="approachTitle">Exemplos aplicados, leitura cr&iacute;tica e tomada de decis&atilde;o</h2>
+        <p id="approachDescription">
           A proposta combina fundamentos metodol&oacute;gicos com exemplos reais ou
           simulados, conectando o c&aacute;lculo da tarifa ao planejamento operacional,
           &agrave; regula&ccedil;&atilde;o, &agrave; transpar&ecirc;ncia e ao debate sobre financiamento do
@@ -79,23 +81,34 @@
         </p>
       </div>
 
+      <div class="content-block">
+        <p id="spreadsheetsEyebrow" class="eyebrow">Planilhas de refer&ecirc;ncia</p>
+        <h2 id="spreadsheetsTitle">GEIPOT e ANTP como ponto de partida pr&aacute;tico</h2>
+        <p id="spreadsheetsDescription">
+          O curso tamb&eacute;m discute a estrutura das planilhas de c&aacute;lculo tarif&aacute;rio
+          baseadas nas metodologias do GEIPOT e da ANTP, mostrando como interpretar
+          seus campos, revisar premissas, adaptar coeficientes e transformar a
+          planilha em uma ferramenta de an&aacute;lise, transpar&ecirc;ncia e simula&ccedil;&atilde;o.
+        </p>
+      </div>
+
       <section class="skills-section">
-        <p class="eyebrow">Compet&ecirc;ncias demonstradas</p>
+        <p id="skillsEyebrow" class="eyebrow">Compet&ecirc;ncias demonstradas</p>
         <div class="skill-list">
-          <span>C&aacute;lculo tarif&aacute;rio</span>
-          <span>Transporte p&uacute;blico</span>
-          <span>Modelagem de custos</span>
-          <span>An&aacute;lise de demanda</span>
-          <span>Comunica&ccedil;&atilde;o t&eacute;cnica</span>
-          <span>Educa&ccedil;&atilde;o profissional</span>
-          <span>Pol&iacute;ticas p&uacute;blicas de mobilidade</span>
+          <span id="skill1">C&aacute;lculo tarif&aacute;rio</span>
+          <span id="skill2">Transporte p&uacute;blico</span>
+          <span id="skill3">Modelagem de custos</span>
+          <span id="skill4">An&aacute;lise de demanda</span>
+          <span id="skill5">Comunica&ccedil;&atilde;o t&eacute;cnica</span>
+          <span id="skill6">Educa&ccedil;&atilde;o profissional</span>
+          <span id="skill7">Pol&iacute;ticas p&uacute;blicas de mobilidade</span>
         </div>
       </section>
 
       <section id="contact-info" class="project-cta">
-        <p class="eyebrow">Contato</p>
-        <h2>Quer conversar sobre a forma&ccedil;&atilde;o?</h2>
-        <p>
+        <p id="contactEyebrow" class="eyebrow">Contato</p>
+        <h2 id="contactTitle">Quer conversar sobre a forma&ccedil;&atilde;o?</h2>
+        <p id="contactDescription">
           Entre em contato para discutir turmas, adapta&ccedil;&otilde;es de conte&uacute;do ou
           aplica&ccedil;&otilde;es do c&aacute;lculo tarif&aacute;rio em contextos reais.
         </p>
@@ -105,5 +118,138 @@
       </section>
     </section>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const themeBtn = document.getElementById("themeBtn");
+      const langBtn = document.getElementById("langBtn");
+
+      const text = {
+        pt: {
+          title: "Curso de C&aacute;lculo Tarif&aacute;rio | Igor Machado",
+          htmlLang: "pt-BR",
+          navhome: "Portfolio",
+          navprojects: "Projetos",
+          navcontact: "Contato",
+          heroEyebrow: "Educa&ccedil;&atilde;o t&eacute;cnica aplicada",
+          heroTitle: "Curso de C&aacute;lculo Tarif&aacute;rio",
+          heroDescription: "Forma&ccedil;&atilde;o pr&aacute;tica sobre custos, demanda, frota, tarifa t&eacute;cnica e subs&iacute;dio no transporte p&uacute;blico urbano.",
+          interestButton: "Tenho interesse",
+          projectsButton: "Voltar aos projetos",
+          whyEyebrow: "Por que este curso existe",
+          whyTitle: "Traduzir uma metodologia complexa em forma&ccedil;&atilde;o pr&aacute;tica",
+          whyDescription: "O c&aacute;lculo tarif&aacute;rio envolve decis&otilde;es t&eacute;cnicas, financeiras e regulat&oacute;rias que afetam diretamente a sustentabilidade do transporte coletivo. O curso organiza essa l&oacute;gica em uma jornada did&aacute;tica para apoiar t&eacute;cnicos, gestores p&uacute;blicos, consultores e profissionais do setor.",
+          topicsTitle: "O que o curso aborda",
+          topic1: "Custos fixos, custos vari&aacute;veis e despesas administrativas.",
+          topic2: "Demanda, passageiros equivalentes, quilometragem e frota.",
+          topic3: "Remunera&ccedil;&atilde;o, deprecia&ccedil;&atilde;o e capital investido.",
+          topic4: "Tarifa t&eacute;cnica, tarifa p&uacute;blica, subs&iacute;dio e cen&aacute;rios.",
+          audienceTitle: "Para quem &eacute;",
+          audience1: "Gestores e equipes t&eacute;cnicas de mobilidade urbana.",
+          audience2: "Consultores, analistas e profissionais de transporte coletivo.",
+          audience3: "Estudantes e pesquisadores que precisam aplicar a metodologia.",
+          audience4: "Times que buscam mais transpar&ecirc;ncia na regula&ccedil;&atilde;o tarif&aacute;ria.",
+          approachEyebrow: "Abordagem",
+          approachTitle: "Exemplos aplicados, leitura cr&iacute;tica e tomada de decis&atilde;o",
+          approachDescription: "A proposta combina fundamentos metodol&oacute;gicos com exemplos reais ou simulados, conectando o c&aacute;lculo da tarifa ao planejamento operacional, &agrave; regula&ccedil;&atilde;o, &agrave; transpar&ecirc;ncia e ao debate sobre financiamento do transporte p&uacute;blico.",
+          spreadsheetsEyebrow: "Planilhas de refer&ecirc;ncia",
+          spreadsheetsTitle: "GEIPOT e ANTP como ponto de partida pr&aacute;tico",
+          spreadsheetsDescription: "O curso tamb&eacute;m discute a estrutura das planilhas de c&aacute;lculo tarif&aacute;rio baseadas nas metodologias do GEIPOT e da ANTP, mostrando como interpretar seus campos, revisar premissas, adaptar coeficientes e transformar a planilha em uma ferramenta de an&aacute;lise, transpar&ecirc;ncia e simula&ccedil;&atilde;o.",
+          skillsEyebrow: "Compet&ecirc;ncias demonstradas",
+          skill1: "C&aacute;lculo tarif&aacute;rio",
+          skill2: "Transporte p&uacute;blico",
+          skill3: "Modelagem de custos",
+          skill4: "An&aacute;lise de demanda",
+          skill5: "Comunica&ccedil;&atilde;o t&eacute;cnica",
+          skill6: "Educa&ccedil;&atilde;o profissional",
+          skill7: "Pol&iacute;ticas p&uacute;blicas de mobilidade",
+          contactEyebrow: "Contato",
+          contactTitle: "Quer conversar sobre a forma&ccedil;&atilde;o?",
+          contactDescription: "Entre em contato para discutir turmas, adapta&ccedil;&otilde;es de conte&uacute;do ou aplica&ccedil;&otilde;es do c&aacute;lculo tarif&aacute;rio em contextos reais."
+        },
+        en: {
+          title: "Fare Calculation Course | Igor Machado",
+          htmlLang: "en",
+          navhome: "Portfolio",
+          navprojects: "Projects",
+          navcontact: "Contact",
+          heroEyebrow: "Applied technical education",
+          heroTitle: "Fare Calculation Course",
+          heroDescription: "Practical training on costs, demand, fleet, technical fare and subsidy in urban public transport.",
+          interestButton: "I'm interested",
+          projectsButton: "Back to projects",
+          whyEyebrow: "Why this course exists",
+          whyTitle: "Turning a complex methodology into practical training",
+          whyDescription: "Fare calculation involves technical, financial and regulatory decisions that directly affect the sustainability of public transport. The course organizes this logic into a didactic journey for technicians, public managers, consultants and sector professionals.",
+          topicsTitle: "What the course covers",
+          topic1: "Fixed costs, variable costs and administrative expenses.",
+          topic2: "Demand, equivalent passengers, mileage and fleet.",
+          topic3: "Remuneration, depreciation and invested capital.",
+          topic4: "Technical fare, public fare, subsidy and scenarios.",
+          audienceTitle: "Who it is for",
+          audience1: "Urban mobility managers and technical teams.",
+          audience2: "Consultants, analysts and public transport professionals.",
+          audience3: "Students and researchers who need to apply the methodology.",
+          audience4: "Teams seeking more transparency in fare regulation.",
+          approachEyebrow: "Approach",
+          approachTitle: "Applied examples, critical reading and decision-making",
+          approachDescription: "The proposal combines methodological foundations with real or simulated examples, connecting fare calculation to operational planning, regulation, transparency and the debate on public transport funding.",
+          spreadsheetsEyebrow: "Reference spreadsheets",
+          spreadsheetsTitle: "GEIPOT and ANTP as a practical starting point",
+          spreadsheetsDescription: "The course also discusses the structure of fare calculation spreadsheets based on GEIPOT and ANTP methodologies, showing how to interpret their fields, review assumptions, adapt coefficients and turn the spreadsheet into a tool for analysis, transparency and simulation.",
+          skillsEyebrow: "Demonstrated skills",
+          skill1: "Fare calculation",
+          skill2: "Public transport",
+          skill3: "Cost modeling",
+          skill4: "Demand analysis",
+          skill5: "Technical communication",
+          skill6: "Professional education",
+          skill7: "Urban mobility public policy",
+          contactEyebrow: "Contact",
+          contactTitle: "Want to discuss the training?",
+          contactDescription: "Get in touch to discuss classes, content adaptations or applications of fare calculation in real contexts."
+        }
+      };
+
+      function setLanguage(lang) {
+        const languageText = text[lang];
+
+        Object.entries(languageText).forEach(([id, value]) => {
+          if (id === "title" || id === "htmlLang") {
+            return;
+          }
+
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = value;
+          }
+        });
+
+        document.title = languageText.title;
+        document.documentElement.lang = languageText.htmlLang;
+        langBtn.innerText = lang === "pt" ? "EN" : "PT";
+        localStorage.setItem("language", lang);
+      }
+
+      themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        themeBtn.innerText = document.body.classList.contains("dark") ? "Light" : "Dark";
+      });
+
+      document.body.classList.add("dark");
+      themeBtn.innerText = "Light";
+
+      let language =
+        localStorage.getItem("language") ||
+        ((navigator.language || navigator.userLanguage).startsWith("pt") ? "pt" : "en");
+
+      setLanguage(language);
+
+      langBtn.addEventListener("click", () => {
+        language = language === "en" ? "pt" : "en";
+        setLanguage(language);
+      });
+    });
+  </script>
 </body>
 </html>
